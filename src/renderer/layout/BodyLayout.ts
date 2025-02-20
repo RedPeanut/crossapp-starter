@@ -31,6 +31,10 @@ export class BodyLayout extends Layout implements BodyLayoutService, SplitViewIt
   get border(): boolean { return this._border; }
   set border(border: boolean) { this._border = border; }
 
+  _sashEnablement: boolean = true;
+  get sashEnablement(): boolean { return this._sashEnablement; }
+  set sashEnablement(b: boolean) { this._sashEnablement = b; }
+
   /* layoutContainer(offset: number): void {
     this._splitViewContainer.style.top = `${offset}px`;
     this._splitViewContainer.style.height = `${this._size}px`;
