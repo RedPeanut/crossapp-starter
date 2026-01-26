@@ -93,6 +93,22 @@ export class MainLayout extends Layout implements MainLayoutService {
     this.bodyLayoutService.inflate();
     this.layout();
     this.installIpc();
+
+    const resize = () => {
+      this.layout();
+    };
+
+    let resizeTimeout: NodeJS.Timeout = null;
+    let _handleResize = () => {
+      if(resizeTimeout)
+        clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(resize, 100);
+    };
+
+    window.addEventListener('resize', () => {
+      // console.log('resize event is called ..');
+      _handleResize();
+    });
   }
 
 }
