@@ -3,15 +3,14 @@
 
 import { contextBridge, ipcRenderer, IpcRendererEvent, IpcRenderer } from 'electron';
 
+// render to main
 export type MainEvents =
-  // sample
-  'sample'
-  | 'maximize'
-  | 'minimize'
-  | 'resize'
-  | 'open context menu'
-  | 'close'
-  | 'command'
+  // window
+  | 'window get'
+  | 'window fn'
+
+  // process
+  | 'process get'
 
   // config
   | 'config all'
@@ -19,8 +18,10 @@ export type MainEvents =
   | 'config set'
   | 'config update'
 
+  // action
 ;
 
+// main to render
 export type RenderEvents =
   'sample add'
   | 'sample data'
