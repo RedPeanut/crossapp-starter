@@ -26,6 +26,9 @@ export type RenderEvents =
   'sample add'
   | 'sample data'
   | 'sample exit'
+
+  // window
+  | 'window state changed'
 ;
 
 export type Channels = MainEvents | RenderEvents;
