@@ -11,7 +11,7 @@ import { Orientation } from '../component/Sash';
 import { bodyLayoutServiceId, getService, Service, setService, mainLayoutServiceId } from '../Service';
 // import Runtime from './Runtime';
 
-export const TITLEBAR_HEIGHT = 42;
+export const TITLEBAR_HEIGHT = 34;
 export const STATUSBAR_HEIGHT = 22;
 
 export const enum Parts {
