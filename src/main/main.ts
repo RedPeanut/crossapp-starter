@@ -13,7 +13,7 @@ import { app, BrowserWindow, shell, screen, ipcMain } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
-import { resolveHtmlPath } from './util';
+import { resolveHtmlPath } from './utils';
 
 class AppUpdater {
   constructor() {
