@@ -5,6 +5,9 @@ import { contextBridge, ipcRenderer, IpcRendererEvent, IpcRenderer } from 'elect
 
 // render to main
 export type MainEvents =
+  // menu
+  | 'menu get'
+
   // window
   | 'window get'
   | 'window fn'
