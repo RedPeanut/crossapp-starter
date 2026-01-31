@@ -30,8 +30,6 @@ class MainWindow {
   isDebug: boolean = false;
   menubar: Menubar;
 
-  mainWindow: BrowserWindow | null = null;
-
   constructor() {
     if(process.env.NODE_ENV === 'production') {
       const sourceMapSupport = require('source-map-support');
