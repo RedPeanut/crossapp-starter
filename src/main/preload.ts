@@ -22,6 +22,7 @@ export type MainEvents =
   | 'config update'
 
   // action
+  | 'get package json'
 ;
 
 // main to render
