@@ -13,7 +13,7 @@ import { MenubarService } from '../part/Menubar';
 // import Runtime from './Runtime';
 
 export const TITLEBAR_HEIGHT = 34;
-export const STATUSBAR_HEIGHT = 22;
+export const STATUSBAR_HEIGHT = 17;
 
 export const enum Parts {
   TITLEBAR_PART = 'part.titlebar',
